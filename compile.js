@@ -4,7 +4,7 @@ const rimraf = require('rimraf');
 
 
 
-const ip = "http://localhost:3666/api";
+const ip = "http://quvia.online:3666/api";
 
 async function main() {
     try {
