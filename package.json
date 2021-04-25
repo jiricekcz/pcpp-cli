@@ -1,0 +1,28 @@
+{
+    "name": "pcpp-cli",
+    "version": "1.0.0",
+    "description": "The PCpp command line interface",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "setup": "npm run reset && node .",
+        "compile": "node compile.js",
+        "compileLocals": "node compileLocal.js",
+        "run": "cd workspace && py main.py",
+        "reset": "node reset.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jiricekcz/pcpp-cli.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jiricekcz/pcpp-cli/issues"
+    },
+    "homepage": "https://github.com/jiricekcz/pcpp-cli#readme",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "rimraf": "^3.0.2"
+    }
+}
