@@ -7,7 +7,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "setup": "npm run reset && node .",
         "compile": "node compile.js",
-        "compileLocals": "node compileLocal.js",
+        "compileLocal": "node compileLocal.js",
         "run": "cd workspace && py main.py",
         "reset": "node reset.js"
     },
