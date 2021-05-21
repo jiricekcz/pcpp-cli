@@ -24,8 +24,12 @@ async function main() {
         
 
         fs.copyFileSync("./workspace/main.py", "./build/main.py");
+        /**
+         * @type {Buffer}
+         */
+        const data = Buffer.from((await f).data, "ascii");
+        fs.writeFileSync("./build/lib.py", data);
 
-        fs.writeFileSync("./build/lib.py", (await f).data);
 
     } catch (e) {
         console.log(e);
