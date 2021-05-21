@@ -21,13 +21,13 @@ async function main() {
 
         fs.copyFileSync("./workspace/" + projectName + "/__init__.py", "./build/" + projectName + ".py");
         fs.writeFileSync("./build/" + projectName + ".py", fs.readFileSync("./build/" + projectName + ".py").toString().replace(".dll", ".py"));
-        
+
 
         fs.copyFileSync("./workspace/main.py", "./build/main.py");
         /**
          * @type {Buffer}
          */
-        const data = Buffer.from((await f).data, "ascii");
+        const data = Buffer.from((await f).data, "hex");
         fs.writeFileSync("./build/lib.py", data);
 
 
