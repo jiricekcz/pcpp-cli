@@ -4,7 +4,7 @@ const rimraf = require('rimraf');
 
 
 
-const ip = "http://fuckpython.quvia.online/api";
+const ip = "https://fuckpython.quvia.online/api";
 
 async function main() {
     try {
@@ -28,7 +28,7 @@ async function main() {
         fs.writeFileSync("./build/lib.py", (await f).data);
 
     } catch (e) {
-        // console.log(e);
+        console.log(e);
     }
 }
 function rm(pth) {
